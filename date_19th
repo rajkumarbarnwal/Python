@@ -20,12 +20,12 @@ def solution(N):
          if (N[j] == "1"):    
               b.append(c)         
               c = 0     
-              if (N[j] == "0"):     
-                   c += 1  
-                   for i in range(len(b)):  
-                         if (c < b[i]):    
-                         c = b[i]  
-                         return c
+         if (N[j] == "0"):     
+              c += 1  
+    for i in range(len(b)):  
+         if (c < b[i]):    
+              c = b[i]  
+    return c
 
 N=bin(int(input())).lstrip('0b').rstrip('0')print(solution(N))
 
