@@ -1,0 +1,17 @@
+Programming Assignment 23rd Jan, Given an integer x, return true if x is apalindrome, and false otherwise.
+Example 1:Input: x = 121Output: trueExplanation: 121 reads as 121 from left to right and from right to left.
+Example 2:Input: x = -121Output: falseExplanation: From left to right, it reads -121. From right to left, it becomes 121-.
+Therefore it is not a palindrome.Example 3:Input: x = 10Output: falseExplanation: Reads 01 from right to left. Therefore it is not a palindrome.
+
+solution--------------
+n=int(input("Enter number:"))
+temp=n
+rev=0
+while(n>0):
+    dig=n%10
+    rev=rev*10+dig
+    n=n//10
+if(temp==rev):
+    print("True")
+else:
+    print("False")
