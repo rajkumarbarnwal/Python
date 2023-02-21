@@ -13,6 +13,7 @@ for i in StrVowel:
 for i in StrVowel:
     if i not in newstr:
         newstr=newstr+i
+newstr = "".join(sorted(newstr,key=str.lower))        
 if newstr!=v:
     print(0)
 else:
